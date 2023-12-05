@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/displayTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="false"
+        android:gravity="end"
+        android:textSize="24sp"
+        android:text="0"
+        android:padding="16dp"
+        android:background="#E0E0E0"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/displayTextView"
+        android:layout_marginTop="16dp"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <Button
+            android:layout_columnSpan="2"
+            android:id="@+id/buttonclear"
+            android:text="AC"
+            style="@style/CalculatorButton"
+            />
+
+        <Button
+            android:id="@+id/buttondevide"
+            android:text="/"
+            style="@style/CalculatorButton_Operator"
+
+            />
+
+        <Button
+            android:id="@+id/buttondelete"
+            android:text="DEL"
+            style="@style/CalculatorButton"
+            />
+
+
+        <Button
+            android:id="@+id/button7"
+
+            android:text="7"
+            style="@style/CalculatorButton"
+            />
+        <Button
+            android:id="@+id/button8"
+
+            android:text="8"
+            style="@style/CalculatorButton"
+
+            />
+        <Button
+            android:id="@+id/button9"
+
+            android:text="9"
+            style="@style/CalculatorButton"
+            />
+        <Button
+            android:id="@+id/buttonmultiply"
+            android:text="*"
+            style="@style/CalculatorButton_Operator"
+            />
+
+
+
+        <Button
+            android:id="@+id/button4"
+            android:text="4"
+            style="@style/CalculatorButton"
+            />
+        <Button
+            android:id="@+id/button5"
+            android:text="5"
+            style="@style/CalculatorButton"
+            />
+        <Button
+            android:id="@+id/button6"
+            android:text="6"
+            style="@style/CalculatorButton"
+            />
+        <Button
+            android:id="@+id/buttonminus"
+            android:text="-"
+            style="@style/CalculatorButton_Operator"
+
+            />
+
+
+
+        <Button
+            android:id="@+id/button1"
+            android:text="1"
+            style="@style/CalculatorButton"
+            />
+        <Button
+            android:id="@+id/button2"
+
+            android:text="2"
+            style="@style/CalculatorButton"
+            />
+        <Button
+            android:id="@+id/button3"
+
+            android:text="3"
+            style="@style/CalculatorButton"
+            />
+        <Button
+            android:id="@+id/buttonplus"
+            android:text="+"
+            style="@style/CalculatorButton_Operator"
+            />
+
+
+        <Button
+            android:layout_columnSpan="2"
+            android:id="@+id/button0"
+            android:text="0"
+            style="@style/CalculatorButton"
+            />
+        <Button
+            android:text="."
+            style="@style/CalculatorButton"
+            />
+        <Button
+            android:id="@+id/buttonequal"
+            android:text="="
+            style="@style/CalculatorButton_Operator"
+            />
+
+
+
+
+    </GridLayout>
+
+
+
+</RelativeLayout>
